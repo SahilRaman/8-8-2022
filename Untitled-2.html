@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>  
+<head>  
+   <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+   <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+</head>  
+<body>  
+   <div id="div1" style="border:solid 2px; background-color:crimson; text-align:center;">  
+      <span>Not Movable!!</span><br /><br />  
+   </div>  
+   <div id="div2" style="border:solid 2px; background-color:white; text-align:center;">  
+      <span>  
+         Drag me for 30px.
+      </span>  
+      <br /><br />  
+   </div>  
+   <div id="div3" style="border:solid 2px; background-color:crimson; text-align:center;">  
+      <span>  
+         Drag after 300ms.   
+      </span>  
+      <br /><br />  
+   </div>  
+<script>  
+      $("#div1 span").draggable (  
+         { disabled: true }  
+      );  
+      $("#div2 span").draggable (  
+         { distance: 30 }  
+      );  
+      $("#div3 span").draggable (  
+         { delay: 300 }  
+      );  
+</script>  
+</body>  
+</html>

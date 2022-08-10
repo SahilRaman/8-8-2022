@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Sortable</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <style>
+        #sortable {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 60%;
+        }
+
+        #sortable li {
+            margin: 0 3px 3px 3px;
+            padding: 0.4em;
+            padding-left: 1.5em;
+            font-size: 1.4em;
+            height: 18px;
+        }
+
+        #sortable li span {
+            position: absolute;
+            margin-left: -1.3em;
+
+
+        }
+
+        .p1 {
+            background-color: brown;
+            margin: 2px;
+            border: 2px;
+        }
+
+        .p2 {
+            background-color: aliceblue;
+            margin: 2px;
+            border: 2px;
+        }
+
+        .p3 {
+            background-color: antiquewhite;
+            margin: 2px;
+            border: 2px;
+        }
+
+        .p4 {
+            background-color: aqua;
+            margin: 2px;
+            border: 2px;
+        }
+
+        .p5 {
+            background-color: aquamarine;
+            margin: 2px;
+            border: 2px;
+        }
+
+        .p6 {
+            background-color: beige;
+            margin: 2px;
+            border: 2px;
+
+        }
+
+        .p7 {
+            background-color: chartreuse;
+            margin: 2px;
+            border: 2px;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $("#sortable").sortable(
+            );
+        });
+    </script>
+</head>
+
+<body>
+    <div id="sp1">
+        <ul id="sortable">
+            <div id="p1">
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> 1</li>
+            </div>
+            <div id="p2">
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> 2</li>
+            </div>
+            <div id="p3">
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>3</li>
+            </div>
+            <div id="p4">
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> 4</li>
+            </div>
+            <div id="p5">
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> 5</li>
+            </div>
+            <div id="p6">
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> 6</li>
+            </div>
+            <div id="p7">
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>7</li>
+            </div>
+        </ul>
+    </div>
+
+</body>
+
+</html>
